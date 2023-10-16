@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- javascript for toggling subskills -->
+    <script>
+        function toggleSubSkills(skillTag) {
+            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
+            if (subSkills.style.display === "block") {
+                subSkills.style.display = "none";
+            } else {
+                subSkills.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+        <div id="sidebar">
+            <img src="/static/images/display.jpg" alt="Ameer Hamza">
+            <h2>Ameer Hamza</h2>
+            <hr>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                Tallahassee, FL, US
+            </div>
+            <div id="institute">
+                <i class="fas fa-university"></i>
+                Florida State University
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                ah18r@fsu.edu
+            </div>
+            <div id="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/a-hamza">LinkedIn</a>
+            </div>
+            <div id="github">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/a-hamza-r">GitHub</a>
+            </div>
+            <div id="google-scholar">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="https://scholar.google.com/citations?user=sqGZQE0AAAAJ">Google Scholar</a>
+            </div>
+            <div id="researchgate">
+                <i class="fab fa-researchgate"></i>
+                <a href="https://www.researchgate.net/profile/Ameer-Hamza-47">ResearchGate</a>
+            </div>
+            <div id="orcid">
+                <i class="fab fa-orcid"></i>
+                <a href="https://orcid.org/0000-0001-7341-0412">ORCID</a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                
+    <p style="font-size: 20px">
+        My email address is 
+        <a href="mailto:ah18r@fsu.edu">ah18r@fsu.edu</a>.
+    </p>
+    <h2>Fill in the following details to contact me:</h2>
+    <form action="https://formspree.io/f/xwkdwwdo" method="POST">
+        <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your email address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send</button>
+    </form>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- javascript for toggling subskills -->
+    <script>
+        function toggleSubSkills(skillTag) {
+            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
+            if (subSkills.style.display === "block") {
+                subSkills.style.display = "none";
+            } else {
+                subSkills.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+        <div id="sidebar">
+            <img src="/static/images/display.jpg" alt="Ameer Hamza">
+            <h2>Ameer Hamza</h2>
+            <hr>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                Tallahassee, FL, US
+            </div>
+            <div id="institute">
+                <i class="fas fa-university"></i>
+                Florida State University
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                ah18r@fsu.edu
+            </div>
+            <div id="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/a-hamza">LinkedIn</a>
+            </div>
+            <div id="github">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/a-hamza-r">GitHub</a>
+            </div>
+            <div id="google-scholar">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="https://scholar.google.com/citations?user=sqGZQE0AAAAJ">Google Scholar</a>
+            </div>
+            <div id="researchgate">
+                <i class="fab fa-researchgate"></i>
+                <a href="https://www.researchgate.net/profile/Ameer-Hamza-47">ResearchGate</a>
+            </div>
+            <div id="orcid">
+                <i class="fab fa-orcid"></i>
+                <a href="https://orcid.org/0000-0001-7341-0412">ORCID</a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                
+<h1>CV</h1>
+    
+    <div id="downloadable-cv">
+        Here is a concise one-pager resume: 
+        <a href="/static/pdfs/resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i>
+        </a>
+    </div>
+
+    <div class="main-container-two-pane">
+        <div class="first-pane">
+            <span style="text-align: center">
+                <h2>
+                    Education
+                </h2>
+            </span>
+            
+    <!-- local macros -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="cv-containers">
+    <!-- generate containers -->
+    
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        <div class="display-title">
+            Florida State University
+        </div>
+    
+        </div>
+        <div class="right-align">
+            
+        <i class="fas fa-map-marker"></i>
+        Tallahassee, FL, US
+    
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Ph.D., Computer Science
+    
+        </div>
+        <div class="right-align">
+            
+        July 2024
+        
+            (expected)
+        
+    
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        <div class="display-title">
+            Lahore University of Management Sciences
+        </div>
+    
+        </div>
+        <div class="right-align">
+            
+        <i class="fas fa-map-marker"></i>
+        Lahore, PK
+    
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Bachelors of Science (BS), Computer Science
+    
+        </div>
+        <div class="right-align">
+            
+        2018
+        
+    
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        <div class="display-title">
+            Government College University
+        </div>
+    
+        </div>
+        <div class="right-align">
+            
+        <i class="fas fa-map-marker"></i>
+        Lahore, PK
+    
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Intermediate in Sciences
+    
+        </div>
+        <div class="right-align">
+            
+        2014
+        
+    
+        </div>
+    </div>
+
+            
+        </div>
+    
+
+    </div>
+
+    <!-- make below functionality as a macro, since it is highly repeated -->
+    <hr>
+    <div class="cv-containers">
+        <h2>Work Experience</h2>
+        <div class="main-container-two-pane display-container">
+            <div class="first-pane">
+                <span style="text-align: center">
+                    <h3>Teaching</h3>
+                </span>
+                <ul class="items-on-cv-page">
+                    
+                        <li>
+                            <a href="#">Summer 2023</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Spring 2023</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Fall 2022</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Spring 2021</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Fall 2019</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Fall 2017</a>
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="second-pane">
+                <span style="text-align: center">
+                    <h3>Jobs</h3>
+                </span>
+                <ul class="items-on-cv-page">
+                    
+                        <li>
+                            <a href="#">Graduate Research Assistant</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Computer Science Lab Intern</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Graduate Research Assistant</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Technical Author</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Backend Developer</a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <hr>
+
+    <div class="cv-containers">
+        <h2>Projects</h2>
+        <div class="main-container-two-pane display-container">
+            <div class="first-pane">
+                <span style="text-align: center">
+                    <h3>Research</h3>
+                </span>
+                <ul class="items-on-cv-page">
+                    
+                        <li>
+                            <a href="#">Computer Architecture Security Exploitation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Lockstep Composition for Unbalanced Loops</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Verification of eBPF Programs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Comparative Study of NLP Models</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Performance of Language Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">HPC Application Analysis using Classification and Clustering</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Automatic Assertion Generation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Branch Prediction Performance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Model Checking of Java Programs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Program Binary Rearrangement</a>
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="second-pane">
+                <span style="text-align: center">
+                    <h3>Development</h3>
+                </span>
+                <ul class="items-on-cv-page">
+                    
+                        <li>
+                            <a href="#">Online portfolio</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Compiler for a Functional Language</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Modifying jEdit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Peer-to-Peer Distributed File Storage System</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Parallelized Game of Life</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Pseudobot</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Dropbin - A Dropbox-like application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Battleship AI</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">Plants vs. Zombies Game</a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+
+        <div class="second-pane">
+            <span style="text-align: center">
+                <h2>
+                    Skills
+                </h2>
+            </span>
+            
+    <div class="cv-containers">
+        
+            <h2>
+                
+                    Programming Languages
+                
+            </h2>
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        C++ (11,14,17,20)
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">ELFIO</span>
+                            
+                                <span class="skill-tag">Qt</span>
+                            
+                                <span class="skill-tag">Boost</span>
+                            
+                                <span class="skill-tag">CMake</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        C
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Rust
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Java
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Spring Boot</span>
+                            
+                                <span class="skill-tag">Spring MVC</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        Python
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        C#/.NET
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Golang
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">bazil.org/fuse</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Haskell
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">LiquidHaskell</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        MATLAB
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Unix/Linux System Programming
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Bash/Shell Scripting
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Network TCP/IP Programming
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Assembly
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">y86-64</span>
+                            
+                                <span class="skill-tag">x86 (Intel, AT&amp;T)</span>
+                            
+                                <span class="skill-tag">RISC (MIPS, ARM)</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        HDL
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Verilog
+                    </div>
+                
+            
+        
+            <h2>
+                
+                    Tools, Frameworks, and Libraries
+                
+            </h2>
+            
+                
+                    <div class="skill-tag">
+                        LLVM Compiler Infrastructure
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        SeaHorn Verification Framework
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        SAT/SMT Solvers
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Z3</span>
+                            
+                                <span class="skill-tag">CVC4</span>
+                            
+                                <span class="skill-tag">CVC5</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        JavaPath Finder (for Model Checking)
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Deep Learning Frameworks
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">PyTorch</span>
+                            
+                                <span class="skill-tag">Keras</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Data Science
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Pandas</span>
+                            
+                                <span class="skill-tag">SciPy</span>
+                            
+                                <span class="skill-tag">NumPy</span>
+                            
+                                <span class="skill-tag">Scikit-Learn</span>
+                            
+                                <span class="skill-tag">Matplotlib</span>
+                            
+                                <span class="skill-tag">Jupyter</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Parallel Programming
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Message Passing Interface - MPI</span>
+                            
+                                <span class="skill-tag">PThreads</span>
+                            
+                                <span class="skill-tag">OpenMP</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        AFL Fuzzer
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        GNU Binutils
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Valgrind
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Lex/Yacc
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Database Languages/Systems
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">SQL (MySQL)</span>
+                            
+                                <span class="skill-tag">MongoDB</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Testing
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Selenium</span>
+                            
+                                <span class="skill-tag">Pytest</span>
+                            
+                                <span class="skill-tag">JUnit</span>
+                            
+                                <span class="skill-tag">JMeter</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Debuggers
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">GDB</span>
+                            
+                                <span class="skill-tag">LLDB</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Build tools
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Ninja</span>
+                            
+                                <span class="skill-tag">Gradle</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        Security tools
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">WireShark</span>
+                            
+                                <span class="skill-tag">PwnTools</span>
+                            
+                                <span class="skill-tag">Ghidra</span>
+                            
+                                <span class="skill-tag">IDA</span>
+                            
+                                <span class="skill-tag">Angr/Pangr</span>
+                            
+                                <span class="skill-tag">ssh</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        Docker
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Git/GitHub
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        Bugzilla
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        JIRA Bug Tracker
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        LaTeX
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        VirtualBox
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        YAML
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        IDEs/Text Editors
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Vim</span>
+                            
+                                <span class="skill-tag">Eclipse</span>
+                            
+                                <span class="skill-tag">IntelliJ</span>
+                            
+                        </div>
+                    
+                
+            
+        
+            <h2>
+                
+                    Web Frameworks
+                
+            </h2>
+            
+                
+                    <div class="skill-tag">
+                        HTML
+                    </div>
+                
+            
+                
+                    <div class="skill-tag">
+                        CSS
+                    </div>
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        JavaScript
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">NPM</span>
+                            
+                                <span class="skill-tag">React.js</span>
+                            
+                                <span class="skill-tag">Node.js</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag-with-subitems"
+                        onclick="toggleSubSkills(this)"
+                        aria-expanded="false">
+                        REST API
+                    </div>
+                    
+                        <div class="sub-skills" aria-hidden="true">
+                            
+                                <span class="skill-tag">Restify</span>
+                            
+                                <span class="skill-tag">Flask</span>
+                            
+                        </div>
+                    
+                
+            
+                
+                    <div class="skill-tag">
+                        Firebase
+                    </div>
+                
+            
+        
+            <h2>
+                
+                    Design
+                
+            </h2>
+            
+                
+                    <div class="skill-tag">
+                        Adobe Photoshop
+                    </div>
+                
+            
+        
+    </div>
+
+    <hr>
+
+    <div class="cv-containers">
+        <h2>Publications</h2>
+        <div class="display-container">
+            <ul class="items-on-cv-page">
+                
+                    <li>
+                        <a href="#">TACAS-2023</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="cv-containers">
+        <h2>Presentations</h2>
+        
+            <div class="display-container">
+                <div class="single-pane-text">
+                    
+                    
+
+                    
+    <div class="two-side-display">
+        <div class="left-align">
+            
+                        <div class="display-title">
+                            TACAS-2023
+                        </div>
+                    
+        </div>
+        <div class="right-align">
+            
+                       <i class="fas fa-map-marker"></i>
+                        Paris, FR 
+                    
+        </div>
+    </div>
+
+                </div>
+                <div class="single-pane-links">
+                    <ul>
+                        
+                            <li>
+                            
+                                <a href="/static/pptx/TACAS-2023_presentation.pptx" target="_blank">
+                                    <i class="fas fa-file-powerpoint fa-lg"></i>
+                                </a>
+                            
+                            </li>
+                        
+                            <li>
+                            
+                                <a href="/static/pdfs/TACAS-2023_presentation.pdf" target="_blank">
+                                    <i class="fas fa-file-pdf fa-lg"></i>
+                                </a>
+                            
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="display-container">
+                <div class="single-pane-text">
+                    
+                    
+
+                    
+    <div class="two-side-display">
+        <div class="left-align">
+            
+                        <div class="display-title">
+                            FMCAD-2021
+                        </div>
+                    
+        </div>
+        <div class="right-align">
+            
+                       <i class="fas fa-map-marker"></i>
+                        Tallahassee, FL (Remote) 
+                    
+        </div>
+    </div>
+
+                </div>
+                <div class="single-pane-links">
+                    <ul>
+                        
+                            <li>
+                            
+                                <a href="/static/pdfs/Poster_for_FMCAD_Student_Forum.pdf" target="_blank">
+                                    <i class="fas fa-file-pdf fa-lg"></i>
+                                </a>
+                            
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    <hr>
+
+    <div class="cv-containers">
+        <h2>Subreviewer for</h2>
+        <div>
+            <ul class="items-on-cv-page conference-list">
+                
+                    <li>VMCAI-2024</li>
+                
+                    <li>FMCAD-2023</li>
+                
+                    <li>TACAS-2023</li>
+                
+                    <li>FMCAD-2022</li>
+                
+                    <li>CAV-2022</li>
+                
+                    <li>FMCAD-2021</li>
+                
+                    <li>ASE-2021</li>
+                
+                    <li>ISCE-2020</li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </body>
+</html>

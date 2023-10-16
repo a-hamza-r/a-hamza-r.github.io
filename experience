@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Experience</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- javascript for toggling subskills -->
+    <script>
+        function toggleSubSkills(skillTag) {
+            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
+            if (subSkills.style.display === "block") {
+                subSkills.style.display = "none";
+            } else {
+                subSkills.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+        <div id="sidebar">
+            <img src="/static/images/display.jpg" alt="Ameer Hamza">
+            <h2>Ameer Hamza</h2>
+            <hr>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                Tallahassee, FL, US
+            </div>
+            <div id="institute">
+                <i class="fas fa-university"></i>
+                Florida State University
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                ah18r@fsu.edu
+            </div>
+            <div id="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/a-hamza">LinkedIn</a>
+            </div>
+            <div id="github">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/a-hamza-r">GitHub</a>
+            </div>
+            <div id="google-scholar">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="https://scholar.google.com/citations?user=sqGZQE0AAAAJ">Google Scholar</a>
+            </div>
+            <div id="researchgate">
+                <i class="fab fa-researchgate"></i>
+                <a href="https://www.researchgate.net/profile/Ameer-Hamza-47">ResearchGate</a>
+            </div>
+            <div id="orcid">
+                <i class="fab fa-orcid"></i>
+                <a href="https://orcid.org/0000-0001-7341-0412">ORCID</a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                
+<h1>Work Experience</h1>
+    
+    <div class="main-container-two-pane">
+        <div class="first-pane">
+            <span style="text-align: center">
+                <h2>
+                    Teaching
+                </h2>
+            </span>
+            
+    <!-- local macros -->
+    
+
+    
+    
+    <!-- generate containers -->
+    
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Summer 2023
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Web Programming and Design (CGS-3066)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Spring 2023
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Theory of Computation (COT-4420)
+                        </span>
+                    </li>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Grad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Introduction to Computer Theory (CGS-5429)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Fall 2022
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Theory of Computation (COT-4420)
+                        </span>
+                    </li>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Grad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Introduction to Computer Theory (CGS-5429)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Spring 2021
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Software Engineering (CEN-4020)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Fall 2019
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Software Engineering (CEN-4020)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Teaching Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Lahore, PK
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        Term:
+        <span style="font-weight: bold;">
+            Fall 2017
+        </span>
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        <div class="display-details" id="course-info">
+            <ul>
+                
+                    <li>
+                        Taught
+                        <span style="font-style: italic;">
+                        
+                            Undergrad
+                        
+                        </span>
+                        course: 
+                        <span style="font-weight: bold;">
+                              Operating Systems (CS-370)
+                        </span>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        </div>
+    
+
+
+        </div>
+
+        <div class="second-pane">
+            <span style="text-align: center">
+                <h2>
+                    Job
+                </h2>
+            </span>
+            
+    <!-- local macros -->
+    
+
+    
+    
+    <!-- generate containers -->
+    
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Research Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        May 2020 - Present
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Computer Science Lab Intern
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Menlo Park, CA
+    
+        (Remote)
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        October 2021 - March 2022
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-building"></i>
+        SRI International
+    
+
+
+        </div>
+    </div>
+
+            
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Graduate Research Assistant
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Tallahassee, FL
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        June 2019 - April 2020
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Technical Author
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    US
+    
+        (Remote)
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        June 2017 - May 2018
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-building"></i>
+        Educative.io
+    
+
+
+        </div>
+    </div>
+
+            
+    
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Backend Developer
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+    <i class="fas fa-map-marker"></i>
+    Lahore, PK
+    
+
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+        October 2017 - February 2018
+    
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-building"></i>
+        Black Collective
+    
+
+
+        </div>
+    </div>
+
+            
+    
+        </div>
+    
+
+
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </body>
+</html>

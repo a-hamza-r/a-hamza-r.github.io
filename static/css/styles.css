@@ -1,0 +1,320 @@
+body {
+    display: flex;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* base.html */
+#sidebar {
+    width: 230px;
+    background-color: #f0f0f0;
+    padding: 20px; /* padding on both sides of the sidebar */
+    min-height: 100vh; /* Set the minimum height of sidebar to 100% of the viewport height */
+}
+
+#sidebar img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 50%; /* Apply a rounded boundary to the image (circle) */
+}
+
+#sidebar div {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#sidebar div i {
+    margin-right: 3px; /* Add spacing between the icon and text */
+}
+
+.content {
+    /* Adjust the width of the content. 
+     * Keeping it at 100% or removing it shortens the sidebar,
+     * so keep it like this*/
+    width: 80%;
+    text-align: left;
+    flex-grow: 1; /* Allow content to grow and fill the available space */
+    padding: 20px;
+}
+
+ul.navbar {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden; /* Hide the horizontal scrollbar */
+    text-align: center; /* Center-align web links inside the navbar */
+}
+
+ul.navbar li {
+    display: inline-block; /* Make the list items appear inline */
+    margin: 0 10px; /* spacing around each list item */
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Generic settings for display containers on multiple pages */
+.display-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+}
+
+.display-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.display-details {
+    font-size: 16px;
+}
+
+.main-container-two-pane {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-pane {
+    width: 48%;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.second-pane {
+    width: 52%;
+}
+
+.make-column-view {
+    flex-direction: column;
+}
+
+.two-side-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.single-pane-text {
+    width: 60%;
+}
+
+.single-pane-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    width: 40%;
+}
+
+.single-pane-links ul {
+    list-style-type: none; /* Remove list bullets */
+}
+
+.single-pane-links ul li {
+    margin-bottom: 10px; /* Add some spacing between links */
+}
+
+
+/* Experience page */
+#course-info ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0
+}
+
+#course-info ul li {
+    margin-bottom: 10px; /* Add some spacing between links */
+}
+
+
+/* CV page */
+#downloadable-cv {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#downloadable-cv i {
+    margin-left: 10px;
+}
+
+#downloadable-cv i:hover {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+ul.links-to-other-pages{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul.links-to-other-pages li {
+    margin: 0 10px; /* spacing around each list item */
+    padding: 8px 0;
+}
+
+.cv-containers {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+ul.conference-list {
+    justify-content: space-between; /* Distribute items with equal space between them */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row when necessary */
+}
+
+ul.conference-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #E0E0FF;
+    flex: 0 1 calc(30% - 20px); /* Calculate width for three items per row with spacing */
+}
+
+ul.items-on-cv-page {
+    list-style-type: none;
+}
+
+ul.items-on-cv-page li {
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.items-on-cv-page li:hover {
+    background-color: #E0FFE0; /* very mint green */
+}
+
+.cv-panes {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Contact page */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.skill-tag-with-subitems {
+    cursor: pointer;
+    position: relative;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.skill-tag-with-subitems.active {
+    background: #0057b8; 
+}
+
+.skill-tag-with-subitems::before {
+  content: "\25BE";
+  margin-right: 5px;
+}
+
+.skill-tag-with-subitems.active::before {
+  transform: rotate(90deg);
+}
+
+.skill-tag {
+    background-color: #ccc;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.sub-skills {
+    transition: height 0.3s ease;
+    position: absolute;
+    background-color: #f0f0f0; /* Background color for subskills */
+    padding: 5px;
+    border: 1px solid #ddd; /* Add a border for the subskills */
+    z-index: 2; /* Ensure subskills appear over other content */
+    display: none; /* Initially hide the sub-skills container */
+    margin-left: 20px;
+}
+
+.skill-tag-with-subitems:hover .sub-skills {
+    display: block;
+}
+
+.sub-skills .sub-skills {
+  margin-left: 40px;
+}

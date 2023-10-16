@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- javascript for toggling subskills -->
+    <script>
+        function toggleSubSkills(skillTag) {
+            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
+            if (subSkills.style.display === "block") {
+                subSkills.style.display = "none";
+            } else {
+                subSkills.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+        <div id="sidebar">
+            <img src="/static/images/display.jpg" alt="Ameer Hamza">
+            <h2>Ameer Hamza</h2>
+            <hr>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                Tallahassee, FL, US
+            </div>
+            <div id="institute">
+                <i class="fas fa-university"></i>
+                Florida State University
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                ah18r@fsu.edu
+            </div>
+            <div id="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/a-hamza">LinkedIn</a>
+            </div>
+            <div id="github">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/a-hamza-r">GitHub</a>
+            </div>
+            <div id="google-scholar">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="https://scholar.google.com/citations?user=sqGZQE0AAAAJ">Google Scholar</a>
+            </div>
+            <div id="researchgate">
+                <i class="fab fa-researchgate"></i>
+                <a href="https://www.researchgate.net/profile/Ameer-Hamza-47">ResearchGate</a>
+            </div>
+            <div id="orcid">
+                <i class="fab fa-orcid"></i>
+                <a href="https://orcid.org/0000-0001-7341-0412">ORCID</a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                
+<h1>Projects</h1>
+    
+    <div class="main-container-two-pane">
+        <div class="first-pane">
+            <span style="text-align: center">
+                <h2>
+                    Research
+                </h2>
+            </span>
+            
+    
+    <!-- generate containers -->
+    
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Computer Architecture Security Exploitation
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        January 2023 - May 2023
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Lockstep Composition for Unbalanced Loops
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        May 2020 - Present
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Verification of eBPF Programs
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        October 2021 - Present
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-building"></i>
+        SRI International
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Comparative Study of NLP Models
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        April 2020 - May 2020
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Performance of Language Features
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        June 2019 - April 2020
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        HPC Application Analysis using Classification and Clustering
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2019 - December 2019
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Automatic Assertion Generation
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2019 - December 2019
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Branch Prediction Performance
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        October 2019 - December 2019
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Model Checking of Java Programs
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        January 2017 - May 2017
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Program Binary Rearrangement
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2017 - December 2017
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+
+
+        </div>
+
+        <div class="second-pane">
+            <span style="text-align: center">
+                <h2>
+                    Development
+                </h2>
+            </span>
+            
+
+    <!-- generate containers -->
+    
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Online portfolio
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Compiler for a Functional Language
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        September 2021 - December 2021
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Modifying jEdit
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        March 2019 - May 2019
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Florida State University
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Peer-to-Peer Distributed File Storage System
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        August 2017 - May 2018
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Parallelized Game of Life
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2017 - December 2017
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Pseudobot
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        March 2017 - May 2017
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Dropbin - A Dropbox-like application
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        February 2016 - March 2016
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Battleship AI
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2016 - December 2016
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+        <div class="display-container make-column-view">
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    <div class="display-title">
+        Plants vs. Zombies Game
+    </div>
+
+        </div>
+        <div class="right-align">
+            
+        </div>
+    </div>
+
+            
+    <div class="two-side-display">
+        <div class="left-align">
+            
+    
+        November 2014 - December 2014
+    
+
+        </div>
+        <div class="right-align">
+            
+    
+    
+        <i class="fas fa-university"></i>
+        Lahore University of Management Sciences
+    
+
+
+        </div>
+    </div>
+
+            
+        </div>
+    
+
+
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </body>
+</html>

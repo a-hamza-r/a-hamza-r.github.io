@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- javascript for toggling subskills -->
+    <script>
+        function toggleSubSkills(skillTag) {
+            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
+            if (subSkills.style.display === "block") {
+                subSkills.style.display = "none";
+            } else {
+                subSkills.style.display = "block";
+            }
+        }
+    </script>
+
+
+    </head>
+    <body>
+        <div id="sidebar">
+            <img src="/static/images/display.jpg" alt="Ameer Hamza">
+            <h2>Ameer Hamza</h2>
+            <hr>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                Tallahassee, FL, US
+            </div>
+            <div id="institute">
+                <i class="fas fa-university"></i>
+                Florida State University
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                ah18r@fsu.edu
+            </div>
+            <div id="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/a-hamza">LinkedIn</a>
+            </div>
+            <div id="github">
+                <i class="fab fa-github"></i>
+                <a href="https://www.github.com/a-hamza-r">GitHub</a>
+            </div>
+            <div id="google-scholar">
+                <i class="fas fa-graduation-cap"></i>
+                <a href="https://scholar.google.com/citations?user=sqGZQE0AAAAJ">Google Scholar</a>
+            </div>
+            <div id="researchgate">
+                <i class="fab fa-researchgate"></i>
+                <a href="https://www.researchgate.net/profile/Ameer-Hamza-47">ResearchGate</a>
+            </div>
+            <div id="orcid">
+                <i class="fab fa-orcid"></i>
+                <a href="https://orcid.org/0000-0001-7341-0412">ORCID</a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                
+    <h1>About me</h1>
+    <p>I am a Ph.D. Candidate at <a href="https://www.cs.fsu.edu">Computer Science Department</a>, <a href="https://fsu.edu">Florida State University</a> and a member of the Formal Methods Lab.
+    I am currently working as a <span class="highlight">Graduate Research Assistant</span> under the supervision of <a href="https://www.cs.fsu.edu/~grigory/">Dr. Grigory Fedyukovich</a>.</p>
+    <p>My area of research interests and expertise are: Formal Methods, Program Analysis, Software Verification, and Compilers.
+    My current focus is on Equivalence Checking of Programs. 
+    I am also working on Verification of eBPF programs (Linux Kernel extensions).</p>
+    <p>In my free time, I like to play table tennis, lawn tennis and cricket, watch TV series, play video games (<a href="https://blog.counter-strike.net/">CSGO</a>) and play card/board games. I also like to cook in my spare time. I love to spend my time looking at memes on the internet.
+    <a href="/static/images/meme.jpg">Here</a>
+    is one related to Computer Science.</p>
+    <p style="text-align: center; font-size: 20px; font-weight: bold;"><a href="https://www.youtube.com/watch?v=v7ScGV5128A" target="_blank">Do not click here</a></p>
+
+            </div>
+        </div>
+    </body>
+</html>
