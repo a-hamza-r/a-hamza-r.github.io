@@ -9,13 +9,38 @@
     <!-- javascript for toggling subskills -->
     <script>
         function toggleSubSkills(skillTag) {
-            var subSkills = skillTag.nextElementSibling; // Get the next sibling element
-            if (subSkills.style.display === "block") {
-                subSkills.style.display = "none";
+            let allSubSkills = document.querySelectorAll('.sub-skills');
+
+            allSubSkills.forEach(subskill => {
+                subskill.style.display = 'none';
+            });
+
+            let subSkills = skillTag.nextElementSibling;
+            let expanded = skillTag.getAttribute("aria-expanded") === "true";
+            let hidden = subSkills.getAttribute("aria-hidden") === "true";
+
+            if (subSkills.style.display === 'block' || !hidden || expanded) {
+                subSkills.style.display = 'none';
             } else {
-                subSkills.style.display = "block";
+                subSkills.style.display = 'block';
             }
+
+            skillTag.setAttribute("aria-expanded", !expanded);
+            subSkills.setAttribute("aria-hidden", !hidden);
         }
+
+        document.addEventListener('click', function(event) {
+            let allTagsWithSubitems = document.querySelectorAll('.skill-tag-with-subitems');
+
+            if (![...allTagsWithSubitems].some(tag => tag.contains(event.target))) {
+                allTagsWithSubitems.forEach(tag => {
+                    tag.setAttribute("aria-expanded", false);
+                    let subSkills = tag.nextElementSibling;
+                    subSkills.setAttribute("aria-hidden", true);
+                    subSkills.style.display = 'none';
+                });
+            }
+        });
     </script>
 
 
@@ -402,515 +427,557 @@
                     Programming Languages
                 
             </h2>
-            
+            <div class="skills-container">
                 
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        C++ (11,14,17,20)
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                C++ (11,14,17,20)
+                            </div>
                             
-                                <span class="skill-tag">ELFIO</span>
-                            
-                                <span class="skill-tag">Qt</span>
-                            
-                                <span class="skill-tag">Boost</span>
-                            
-                                <span class="skill-tag">CMake</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">ELFIO</span>
+                                    
+                                        <span class="skill-tag">Qt</span>
+                                    
+                                        <span class="skill-tag">Boost</span>
+                                    
+                                        <span class="skill-tag">CMake</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        C
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Rust
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Java
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            C
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Rust
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Java
+                            </div>
                             
-                                <span class="skill-tag">Spring Boot</span>
-                            
-                                <span class="skill-tag">Spring MVC</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Spring Boot</span>
+                                    
+                                        <span class="skill-tag">Spring MVC</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        Python
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        C#/.NET
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Golang
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            Python
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            C#/.NET
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Golang
+                            </div>
                             
-                                <span class="skill-tag">bazil.org/fuse</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">bazil.org/fuse</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Haskell
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Haskell
+                            </div>
                             
-                                <span class="skill-tag">LiquidHaskell</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">LiquidHaskell</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        MATLAB
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Unix/Linux System Programming
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Bash/Shell Scripting
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Network TCP/IP Programming
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Assembly
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            MATLAB
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Unix/Linux System Programming
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Bash/Shell Scripting
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Network TCP/IP Programming
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Assembly
+                            </div>
                             
-                                <span class="skill-tag">y86-64</span>
-                            
-                                <span class="skill-tag">x86 (Intel, AT&amp;T)</span>
-                            
-                                <span class="skill-tag">RISC (MIPS, ARM)</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">y86-64</span>
+                                    
+                                        <span class="skill-tag">x86 (Intel, AT&amp;T)</span>
+                                    
+                                        <span class="skill-tag">RISC (MIPS, ARM)</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
+                    
+                        <div class="skill-tag-no-sub">
+                            HDL
+                        </div>
+                    
                 
-                    <div class="skill-tag">
-                        HDL
-                    </div>
+                    
+                        <div class="skill-tag-no-sub">
+                            Verilog
+                        </div>
+                    
                 
-            
-                
-                    <div class="skill-tag">
-                        Verilog
-                    </div>
-                
-            
+            </div>
         
             <h2>
                 
                     Tools, Frameworks, and Libraries
                 
             </h2>
-            
+            <div class="skills-container">
                 
-                    <div class="skill-tag">
-                        LLVM Compiler Infrastructure
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        SeaHorn Verification Framework
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        SAT/SMT Solvers
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            LLVM Compiler Infrastructure
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            SeaHorn Verification Framework
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                SAT/SMT Solvers
+                            </div>
                             
-                                <span class="skill-tag">Z3</span>
-                            
-                                <span class="skill-tag">CVC4</span>
-                            
-                                <span class="skill-tag">CVC5</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Z3</span>
+                                    
+                                        <span class="skill-tag">CVC4</span>
+                                    
+                                        <span class="skill-tag">CVC5</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        JavaPath Finder (for Model Checking)
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Deep Learning Frameworks
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            JavaPath Finder (for Model Checking)
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Deep Learning Frameworks
+                            </div>
                             
-                                <span class="skill-tag">PyTorch</span>
-                            
-                                <span class="skill-tag">Keras</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">PyTorch</span>
+                                    
+                                        <span class="skill-tag">Keras</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Data Science
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Data Science
+                            </div>
                             
-                                <span class="skill-tag">Pandas</span>
-                            
-                                <span class="skill-tag">SciPy</span>
-                            
-                                <span class="skill-tag">NumPy</span>
-                            
-                                <span class="skill-tag">Scikit-Learn</span>
-                            
-                                <span class="skill-tag">Matplotlib</span>
-                            
-                                <span class="skill-tag">Jupyter</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Pandas</span>
+                                    
+                                        <span class="skill-tag">SciPy</span>
+                                    
+                                        <span class="skill-tag">NumPy</span>
+                                    
+                                        <span class="skill-tag">Scikit-Learn</span>
+                                    
+                                        <span class="skill-tag">Matplotlib</span>
+                                    
+                                        <span class="skill-tag">Jupyter</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Parallel Programming
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Parallel Programming
+                            </div>
                             
-                                <span class="skill-tag">Message Passing Interface - MPI</span>
-                            
-                                <span class="skill-tag">PThreads</span>
-                            
-                                <span class="skill-tag">OpenMP</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Message Passing Interface - MPI</span>
+                                    
+                                        <span class="skill-tag">PThreads</span>
+                                    
+                                        <span class="skill-tag">OpenMP</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        AFL Fuzzer
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        GNU Binutils
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Valgrind
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Lex/Yacc
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Database Languages/Systems
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            AFL Fuzzer
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            GNU Binutils
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Valgrind
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Lex/Yacc
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Database Languages/Systems
+                            </div>
                             
-                                <span class="skill-tag">SQL (MySQL)</span>
-                            
-                                <span class="skill-tag">MongoDB</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">SQL (MySQL)</span>
+                                    
+                                        <span class="skill-tag">MongoDB</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Testing
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Testing
+                            </div>
                             
-                                <span class="skill-tag">Selenium</span>
-                            
-                                <span class="skill-tag">Pytest</span>
-                            
-                                <span class="skill-tag">JUnit</span>
-                            
-                                <span class="skill-tag">JMeter</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Selenium</span>
+                                    
+                                        <span class="skill-tag">Pytest</span>
+                                    
+                                        <span class="skill-tag">JUnit</span>
+                                    
+                                        <span class="skill-tag">JMeter</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Debuggers
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Debuggers
+                            </div>
                             
-                                <span class="skill-tag">GDB</span>
-                            
-                                <span class="skill-tag">LLDB</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">GDB</span>
+                                    
+                                        <span class="skill-tag">LLDB</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Build tools
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Build tools
+                            </div>
                             
-                                <span class="skill-tag">Ninja</span>
-                            
-                                <span class="skill-tag">Gradle</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Ninja</span>
+                                    
+                                        <span class="skill-tag">Gradle</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        Security tools
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                Security tools
+                            </div>
                             
-                                <span class="skill-tag">WireShark</span>
-                            
-                                <span class="skill-tag">PwnTools</span>
-                            
-                                <span class="skill-tag">Ghidra</span>
-                            
-                                <span class="skill-tag">IDA</span>
-                            
-                                <span class="skill-tag">Angr/Pangr</span>
-                            
-                                <span class="skill-tag">ssh</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">WireShark</span>
+                                    
+                                        <span class="skill-tag">PwnTools</span>
+                                    
+                                        <span class="skill-tag">Ghidra</span>
+                                    
+                                        <span class="skill-tag">IDA</span>
+                                    
+                                        <span class="skill-tag">Angr/Pangr</span>
+                                    
+                                        <span class="skill-tag">ssh</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag">
-                        Docker
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Git/GitHub
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        Bugzilla
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        JIRA Bug Tracker
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        LaTeX
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        VirtualBox
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        YAML
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        IDEs/Text Editors
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            Docker
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Git/GitHub
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            Bugzilla
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            JIRA Bug Tracker
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            LaTeX
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            VirtualBox
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            YAML
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                IDEs/Text Editors
+                            </div>
                             
-                                <span class="skill-tag">Vim</span>
-                            
-                                <span class="skill-tag">Eclipse</span>
-                            
-                                <span class="skill-tag">IntelliJ</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Vim</span>
+                                    
+                                        <span class="skill-tag">Eclipse</span>
+                                    
+                                        <span class="skill-tag">IntelliJ</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
+            </div>
         
             <h2>
                 
                     Web Frameworks
                 
             </h2>
-            
+            <div class="skills-container">
                 
-                    <div class="skill-tag">
-                        HTML
-                    </div>
-                
-            
-                
-                    <div class="skill-tag">
-                        CSS
-                    </div>
-                
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        JavaScript
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-tag-no-sub">
+                            HTML
+                        </div>
+                    
+                
+                    
+                        <div class="skill-tag-no-sub">
+                            CSS
+                        </div>
+                    
+                
+                    
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                JavaScript
+                            </div>
                             
-                                <span class="skill-tag">NPM</span>
-                            
-                                <span class="skill-tag">React.js</span>
-                            
-                                <span class="skill-tag">Node.js</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">NPM</span>
+                                    
+                                        <span class="skill-tag">React.js</span>
+                                    
+                                        <span class="skill-tag">Node.js</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
-                
-                    <div class="skill-tag-with-subitems"
-                        onclick="toggleSubSkills(this)"
-                        aria-expanded="false">
-                        REST API
-                    </div>
                     
-                        <div class="sub-skills" aria-hidden="true">
+                        <div class="skill-container">
+                            <div class="skill-tag-with-subitems"
+                                onclick="toggleSubSkills(this)"
+                                aria-expanded="false">
+                                REST API
+                            </div>
                             
-                                <span class="skill-tag">Restify</span>
-                            
-                                <span class="skill-tag">Flask</span>
+                                <div class="sub-skills" aria-hidden="true">
+                                    
+                                        <span class="skill-tag">Restify</span>
+                                    
+                                        <span class="skill-tag">Flask</span>
+                                    
+                                </div>
                             
                         </div>
                     
                 
-            
+                    
+                        <div class="skill-tag-no-sub">
+                            Firebase
+                        </div>
+                    
                 
-                    <div class="skill-tag">
-                        Firebase
-                    </div>
-                
-            
+            </div>
         
             <h2>
                 
                     Design
                 
             </h2>
-            
+            <div class="skills-container">
                 
-                    <div class="skill-tag">
-                        Adobe Photoshop
-                    </div>
+                    
+                        <div class="skill-tag-no-sub">
+                            Adobe Photoshop
+                        </div>
+                    
                 
-            
+            </div>
         
     </div>
 
