@@ -13,4 +13,4 @@ There are two ways to make changes to the website:
 2. Clone the repository https://github.com/a-hamza-r/portfolio/, follow the instructions to make changes to the website, use the instructions to create a static website (https://github.com/a-hamza-r/portfolio?tab=readme-ov-file#deploying-the-website) and copy the static files to this repository.
 
 ## Contact
-For any queries, contact me at https://a-hamza-r.github.io/contact/.
+For any queries, contact me at https://a-hamza-r.github.io/contact.
